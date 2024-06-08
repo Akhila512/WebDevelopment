@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Pricing Plans</h1>
+        <p>Choose the plan that suits you best.</p>
+    </header>
+    <main>
+        <div class="customization">
+            <label for="currency">Currency</label>
+            <select id="currency" onchange="updatePricing()">
+                <option value="USD">$</option>
+                <option value="EUR">€</option>
+                <option value="GBP">£</option>
+            </select>
+            <label for="unit">Unit:</label>
+            <select id="unit" onchange="updatePricing()">
+                <option value="month">/month</option>
+                <option value="year">/year</option>
+            </select>
+        </div>
+        <div class="pricing-table">
+            <div class="pricing-card" data-price-month="9.99" data-price-year="99.99">
+                <h2>Basic</h2>
+                <p class="price"></p>
+                <ul>
+                    <li>10 Projects</li>
+                    <li>5 GB Storage</li>
+                    <li>Email Support</li>
+                </ul>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+            <div class="pricing-card" data-price-month="19.99" data-price-year="199.99">
+                <h2>Standard</h2>
+                <p class="price"></p>
+                <ul>
+                    <li>50 Projects</li>
+                    <li>20 GB Storage</li>
+                    <li>Priority Email Support</li>
+                </ul>
+                <a href="#" class="btn">Sign Up</a> 
+            </div>
+            <div class="pricing-card" data-price-month="29.99" data-price-year="299.99">
+                <h2>Premium</h2>
+                <p class="price"></p>
+                <ul>
+                    <li>Unlimited Projects</li>
+                    <li>100 GB Storage</li>
+                    <li>Phone & Email Support</li>
+                </ul>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company.All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
